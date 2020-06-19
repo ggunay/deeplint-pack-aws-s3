@@ -13,7 +13,7 @@ meta:
 scanners:
   aws-s3-scanner:
     type: nodejs
-    uses: @deeplint/deepscanner-aws
+    uses: "@deeplint/deepscanner-aws"
     main: scan
 
 rules:
