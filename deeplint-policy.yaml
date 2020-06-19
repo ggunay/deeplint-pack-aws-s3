@@ -1,7 +1,7 @@
 meta:
   name: deeplint-policy-starter-template
-  author: Your trusted cloud advisor
-  description: This is a starter template for creating DeepLint policy
+  author: DeepLint Dev
+  description: Policy to check AWS S3 related resources
   policyFormatVersion: 1.0.0
 
 #inputs:
@@ -11,21 +11,21 @@ meta:
 #    default: "./"
 
 scanners:
-  dummy-scanner:
+  aws-s3-scanner:
     type: nodejs
-    uses: src/scanner/dummy-scanner.js
+    uses: @deeplint/deepscanner-aws
     main: scan
 
 rules:
-  dummy-rule-1:
+  is-versioning-enabled:
     type: nodejs
-    uses: src/rule/dummy-rule-1.js
+    uses: src/rule/is-versioning-enabled.js
     main: check
     meta:
       type: "warn"
-      description: "Dummy Rule"
+      description: "Check whether S3 Bucket versioning is enabled"
       tags:
-        - "security"
+        - "S3"
 
 #actions:
 #  dummy-fix:

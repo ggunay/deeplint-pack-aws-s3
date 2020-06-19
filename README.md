@@ -1,3 +1,5 @@
-# DeepLint Policy Starter
+# DeepLint Policy AWS S3
 
-This provides a minimal starter template for creating a DeepLint policy.
+The [DeepLint](https://deeplint.com) policy to check AWS S3 related resources.
+
+

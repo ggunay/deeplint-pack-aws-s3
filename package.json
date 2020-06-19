@@ -1,7 +1,7 @@
 {
-  "name": "deeplint-policy-starter",
+  "name": "@deeplint/policy-aws-s3",
   "version": "1.0.0",
-  "description": "This provides a minimal starter template for creating a DeepLint policy.",
+  "description": "DeepLint policy for checking AWS S3",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -16,5 +16,6 @@
   "bugs": {
     "url": "https://github.com/deeplint/deeplint-policy-starter/issues"
   },
-  "homepage": "https://github.com/deeplint/deeplint-policy-starter#readme"
+  "homepage": "https://github.com/deeplint/deeplint-policy-starter#readme",
+  "dependencies": {}
 }
