@@ -19,7 +19,7 @@ scanners:
 rules:
   is-versioning-enabled:
     type: nodejs
-    uses: src/rule/is-versioning-enabled.js
+    uses: src/rules/is-versioning-enabled.js
     main: check
     meta:
       type: "warn"

@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/deeplint/deeplint-policy-starter.git"
+    "url": "git+https://github.com/deeplint/deeplint-policy-aws-s3.git"
   },
   "keywords": [],
   "author": "",
   "license": "Apache 2.0",
   "bugs": {
-    "url": "https://github.com/deeplint/deeplint-policy-starter/issues"
+    "url": "https://github.com/deeplint/deeplint-policy-aws-s3/issues"
   },
-  "homepage": "https://github.com/deeplint/deeplint-policy-starter#readme",
+  "homepage": "https://github.com/deeplint/deeplint-policy-aws-s3",
   "dependencies": {}
 }
