@@ -1,3 +1,17 @@
 exports.check = async function (context) {
-    return []
+    const resources = context.getResources()
+    let problems = []
+    for (const key of Object.keys(resources)) {
+        for (const resource of resources[key]) {
+            if(resource.type === 'aws::s3::bucket') {
+                if(resource.properties.VersioningConfiguration && !resource.properties.VersioningConfiguration.has(Status)) {
+                    problems.push({
+                        message: `AWS S3 Bucket: ${resource.name} does not enable versioning`
+                    })
+                }
+
+            }
+        }
+    }
+    return problems
 }
