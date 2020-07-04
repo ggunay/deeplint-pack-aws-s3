@@ -1,5 +1,5 @@
-# DeepLint Policy AWS S3
+# DeepLint Package AWS S3
 
-The [DeepLint](https://deeplint.com) policy to check AWS S3 related resources.
+The [DeepLint](https://deeplint.com) package to check and fix problems for AWS S3 related resources.
 
 

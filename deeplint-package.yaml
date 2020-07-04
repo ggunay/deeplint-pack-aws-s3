@@ -1,8 +1,8 @@
 meta:
-  name: deeplint-policy-starter-template
-  author: DeepLint Dev
-  description: Policy to check AWS S3 related resources
-  policyFormatVersion: 1.0.0
+  name: deeplint-package-aws-s3
+  author: DeepLint(dev@deeplint.com)
+  description: Package to find and fix problems for AWS S3
+  packageFormatVersion: 1.0.0
 
 #inputs:
 #  dummy:

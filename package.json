@@ -1,21 +1,21 @@
 {
-  "name": "@deeplint/policy-aws-s3",
+  "name": "@deeplint/package-aws-s3",
   "version": "1.0.0",
-  "description": "DeepLint policy for checking AWS S3",
+  "description": "DeepLint package for checking AWS S3",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/deeplint/deeplint-policy-aws-s3.git"
+    "url": "git+https://github.com/deeplint/deeplint-package-aws-s3.git"
   },
   "keywords": [],
   "author": "",
   "license": "Apache 2.0",
   "bugs": {
-    "url": "https://github.com/deeplint/deeplint-policy-aws-s3/issues"
+    "url": "https://github.com/deeplint/deeplint-package-aws-s3/issues"
   },
-  "homepage": "https://github.com/deeplint/deeplint-policy-aws-s3",
+  "homepage": "https://github.com/deeplint/deeplint-package-aws-s3",
   "dependencies": {}
 }
