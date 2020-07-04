@@ -17,5 +17,7 @@
     "url": "https://github.com/deeplint/deeplint-package-aws-s3/issues"
   },
   "homepage": "https://github.com/deeplint/deeplint-package-aws-s3",
-  "dependencies": {}
+  "dependencies": {
+    "@deeplint/deepscanner-aws": "^0.3.0"
+  }
 }
