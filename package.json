@@ -1,8 +1,8 @@
 {
   "name": "@deeplint/package-aws-s3",
-  "version": "1.0.0",
+  "version": "1.4.1",
   "description": "DeepLint package for checking AWS S3 resources",
-  "main": "index.js",
+  "main": "deeplint-package.yaml",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -18,6 +18,6 @@
   },
   "homepage": "https://github.com/deeplint/deeplint-package-aws-s3",
   "dependencies": {
-    "@deeplint/deepscanner-aws": "^0.3.0"
+    "@deeplint/deepscanner-aws": "^0.4.0"
   }
 }

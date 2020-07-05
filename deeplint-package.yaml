@@ -19,11 +19,11 @@ scanners:
 rules:
   is-versioning-enabled:
     type: nodejs
-    uses: src/rules/is-versioning-enabled.js
+    uses: src/rules/is-encryption-enabled.js
     main: check
     meta:
       type: "warn"
-      description: "Check whether S3 Bucket versioning is enabled"
+      description: "Check whether S3 Bucket server side encryption is enabled"
       tags:
         - "S3"
 

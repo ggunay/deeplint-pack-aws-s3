@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@deeplint/deepscanner-aws@^0.3.0":
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/@deeplint/deepscanner-aws/-/deepscanner-aws-0.3.0.tgz#baae083dbc503c38421fe34e9b0af6202ecfe964"
-  integrity sha512-NUfqrxVitNJMECT29NGecO4WR2dwThjcdo8W96IHlMZkcOC6xkvJ1tRRmKwgharLw99aJkOryuAi0Lr9sFCrjw==
+"@deeplint/deepscanner-aws@^0.4.0":
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/@deeplint/deepscanner-aws/-/deepscanner-aws-0.4.0.tgz#cca8447c2c7ff6609d3f42c9be0d73769bdac05b"
+  integrity sha512-KBX3ZehQanJc93C4ScUPYCGstrX3HhdsW36xLUBAMzgrjuV9+QeVFSKOl8lDs9//lr+DvBEJNvks5pVPrYbV6Q==
   dependencies:
     "@deeplint/deepscanner-base" "^0.1.1"
     aws-sdk "^2.695.0"
