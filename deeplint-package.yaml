@@ -32,7 +32,17 @@ rules:
       description: "Check whether S3 Bucket server side encryption is enabled"
       tags:
         - "S3"
-
+  is-bucket-public:
+    type: nodejs
+    uses: "./src/rules/is-bucket-public.js"
+    main: check
+    with:
+      buckets: {{buckets}}
+    meta:
+      type: "warn"
+      description: "Check whether S3 Bucket is public"
+      tags:
+        - "S3"
 #actions:
 #  dummy-fix:
 #    type: nodejs
