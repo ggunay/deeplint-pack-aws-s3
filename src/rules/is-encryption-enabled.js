@@ -9,7 +9,6 @@ exports.check = async function (context) {
                         message: `AWS S3 Bucket: ${resource.name} does not enable server-side encryption`
                     })
                 }
-
             }
         }
     }

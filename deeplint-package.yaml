@@ -3,24 +3,30 @@ meta:
   author: DeepLint(dev@deeplint.com)
   description: Package to find and fix problems for AWS S3
   packageFormatVersion: 1.0.0
-
-#inputs:
-#  dummy:
-#    description: dummy inputs
-#    type: String
-#    default: "./"
-
+inputs:
+  buckets:
+    description: S3 buckets name regex for buckets to check
+    type: String
+    default: ".*"
+  regions:
+    description: AWS Regions
+    type: String
+    default: "['us-east-1']"
 scanners:
   aws-s3-scanner:
     type: nodejs
     uses: "@deeplint/deepscanner-aws"
     main: scan
-
+    with:
+      services: ["S3"]
+      regions: {{regions}}
 rules:
-  is-versioning-enabled:
+  is-bucket-encryption-enabled:
     type: nodejs
-    uses: src/rules/is-encryption-enabled.js
+    uses: "./src/rules/is-encryption-enabled.js"
     main: check
+    with:
+      buckets: ${buckets}
     meta:
       type: "warn"
       description: "Check whether S3 Bucket server side encryption is enabled"
