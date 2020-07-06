@@ -1,7 +1,7 @@
 {
   "name": "@deeplint/package-aws-s3",
-  "version": "1.4.2",
-  "description": "DeepLint package for checking AWS S3 resources",
+  "version": "1.4.3",
+  "description": "DeepLint package for checking AWS S3",
   "main": "deeplint-package.yaml",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,8 +10,8 @@
     "type": "git",
     "url": "git+https://github.com/deeplint/deeplint-package-aws-s3.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["cloud", "s3", "aws", "security"],
+  "author": "DeepLint Dev",
   "license": "Apache 2.0",
   "bugs": {
     "url": "https://github.com/deeplint/deeplint-package-aws-s3/issues"
