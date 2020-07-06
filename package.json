@@ -1,6 +1,6 @@
 {
   "name": "@deeplint/package-aws-s3",
-  "version": "1.4.3",
+  "version": "1.5.0",
   "description": "DeepLint package for checking AWS S3",
   "main": "deeplint-package.yaml",
   "scripts": {
