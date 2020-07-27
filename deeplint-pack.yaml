@@ -1,8 +1,8 @@
 meta:
-  name: deeplint-package-aws-s3
+  name: deeplint-pack-aws-s3
   author: DeepLint(dev@deeplint.com)
-  description: Package to find and fix problems for AWS S3
-  packageFormatVersion: 1.0.0
+  description: Pack to find and fix problems for AWS S3
+  packFormatVersion: 1.0.0
 inputs:
   buckets:
     description: S3 buckets name regex for buckets to check
