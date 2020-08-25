@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # README #
 
 This README would normally document whatever steps are necessary to get your application up and running.
@@ -27,3 +28,10 @@ This README would normally document whatever steps are necessary to get your app
 
 * Repo owner or admin
 * Other community or team contact
+=======
+# DeepLint Package AWS S3
+
+The [DeepLint](https://deeplint.com) package to check and fix problems for AWS S3 related resources.
+
+
+>>>>>>> 1ea437d64a4645c4a4f6a2785644cf21ab3a8a7f
