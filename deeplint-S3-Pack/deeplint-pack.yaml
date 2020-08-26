@@ -43,6 +43,31 @@ rules:
       description: "Check whether S3 Bucket is public"
       tags:
         - "S3"
+
+
+  MFADelete:
+    type: nodejs
+    uses: "./src/rules/S3MFADelete.js" 
+    main: check
+    with:
+      buckets: {{buckets}}
+    meta:
+      type: "warn"
+      description: "Check whether on S3 bucket MFA is enabled"
+      tags:
+        - "S3"
+
+  Versioning:
+    type: nodejs
+    uses: "./src/rules/S3Versioning.js" 
+    main: check
+    with:
+      buckets: {{buckets}}
+    meta:
+      type: "warn"
+      description: "Check whether on S3 bucket Versioning is enabled"
+      tags:
+        - "S3"
 #actions:
 #  dummy-fix:
 #    type: nodejs
