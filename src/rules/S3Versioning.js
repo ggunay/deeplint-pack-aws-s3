@@ -6,16 +6,9 @@ exports.check = async function (context) {
         for (const resource of resources[key]) {
             if (resource.type === 'aws::s3::bucket') {
                 let isEnabled = false;
-                // if (_.has(resource.properties, 'status')) {
-                //     for (const rule of resource.properties.BucketACLs.Grants) {
-                //         if (rule.Grantee.URI === "http://acs.amazonaws.com/groups/global/AllUsers") {
-                //             if (rule.Permission === 'READ' || rule.Permission === 'WRITE' || rule.Permission === 'FULL_CONTROL') {
-                //                 isPublic = true;
-                //                 break; //
-                //             }
-                //         }
-                //     }
-                // }
+
+
+                try{
                 if (_.has(resource.properties, 'BucketVersioning.status') && resource.properties.BucketVersioning.status == "Enabled") {
                     isEnabled = true;
                 }
@@ -23,6 +16,18 @@ exports.check = async function (context) {
                     problems.push({
                         message: `AWS S3 Bucket: ${resource.name} does not have versioning enabled`
                     })
+                }
+            }
+
+                catch(e) {
+
+                    console.error(e.message);
+                }
+        
+            finally{
+        
+                    continue
+        
                 }
             }
         }

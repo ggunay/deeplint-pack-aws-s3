@@ -68,6 +68,31 @@ rules:
       description: "Check whether on S3 bucket Versioning is enabled"
       tags:
         - "S3"
+
+
+  S3AccessLogs:
+    type: nodejs
+    uses: "./src/rules/S3AccessLogs.js" 
+    main: check
+    with:
+      buckets: {{buckets}}
+    meta:
+      type: "warn"
+      description: "Ensure the S3 bucket has access logging enabled"
+      tags:
+        - "S3"
+
+  S3AllowsAnyPrincipal:
+    type: nodejs
+    uses: "./src/rules/S3AllowsAnyPrincipal.js" 
+    main: check
+    with:
+      buckets: {{buckets}}
+    meta:
+      type: "warn"
+      description: "Ensure S3 bucket does not allow an action with any Principal"
+      tags:
+        - "S3"
 #actions:
 #  dummy-fix:
 #    type: nodejs
